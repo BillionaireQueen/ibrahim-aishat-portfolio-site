@@ -32,6 +32,28 @@
 
   const PROJECTS = [
     {
+      id: 'n8n-gemini-chatbox',
+      category: 'AI & Automation',
+      title: 'n8n + Gemini AI Website Chatbox Agent',
+      desc: 'A published n8n workflow agent connecting website webhooks to Google Gemini LLM with memory buffer and custom tools for automated real-time chat responses.',
+      image: 'assets/n8n_website_chatbox.png',
+      tags: ['n8n Cloud', 'Google Gemini AI', 'Webhooks', 'AI Agent Memory'],
+      problem: 'Website visitors needed instant, context-aware answers to inquiries without requiring human customer support agents on call 24/7.',
+      solution: 'Built a custom n8n cloud workflow featuring Webhook POST triggers, an AI Agent node powered by Google Gemini Chat Model, conversation memory, and automated response payloads back to the chatbox.',
+      outcomes: ['Sub-second response time for website chat inquiries', 'Maintains contextual conversation history via n8n Memory node', '100% automated handling of standard visitor questions']
+    },
+    {
+      id: 'make-applicant-pipeline',
+      category: 'Business Automation',
+      title: 'Make.com Candidate & Lead Pipeline',
+      desc: 'An automated Make.com scenario watching Google Sheets for new applicants, performing deduplication logic via router filters, logging entries, and dispatching Gmail notifications.',
+      image: 'assets/make_applicant_automation.png',
+      tags: ['Make.com', 'Google Sheets API', 'Gmail API', 'Router Logic'],
+      problem: 'Processing incoming form submissions manually led to duplicate candidate records, delayed applicant follow-up, and tracking errors.',
+      solution: 'Designed a Make.com automation scenario that watches new rows, searches database records to detect duplicates via a Router node, routes clean leads, dispatches tailored Gmail notifications, and updates pipeline status.',
+      outcomes: ['Zero duplicate entries in applicant tracking system', 'Instant automated Gmail confirmation sent upon form submission', 'Automated 15-minute scheduled execution cycle']
+    },
+    {
       id: 'bakery-ai',
       category: 'AI & Automation',
       title: 'AI Bakery Assistant',
